@@ -14,7 +14,7 @@ import org.testng.Assert;
 public class StandAloneCode {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stub//
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://rahulshettyacademy.com/client");
 		driver.manage().window().maximize();
