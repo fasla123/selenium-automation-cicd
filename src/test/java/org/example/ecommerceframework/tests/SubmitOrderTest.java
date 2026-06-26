@@ -18,6 +18,7 @@ public class SubmitOrderTest extends BaseTest {
 	@Test(dataProvider="getData",groups= {"Regression"})
 	public void submitOrderTest(HashMap<String,String> input) throws IOException, InterruptedException {
 		// TODO Auto-generated method stub
+		//added comments
 		System.out.println(input);
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("email"), input.get("password"));
 		productCatalogue.addProductTocart(input.get("productName"));
