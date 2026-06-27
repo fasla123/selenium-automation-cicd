@@ -73,39 +73,54 @@ The framework is built using the **Page Object Model (POM)** to ensure scalabili
 ## 📂 Project Structure
 
 ```text
-ecommerceframework
+ecommerceframework/
 │
-├── src
-│   ├── main
-│   │   └── java
-│   │       └── org.example.ecommerceframework
-│   │           ├── abstractcomponents
-│   │           │      └── AbstractComponent.java
-│   │           │
-│   │           ├── pageobjects
-│   │           │      ├── LandingPage.java
-│   │           │      ├── ProductCatalogue.java
-│   │           │      ├── ProductCartPage.java
-│   │           │      ├── CheckOutPage.java
-│   │           │      ├── OrdersPage.java
-│   │           │      └── ConfirmationPage.java
-│   │           │
-│   │           └── resources
-│   │                  ├── ExtentReportNG.java
-│   │                  └── GlobalData.properties
-│   │
-│   └── test
-│       └── java
-│           └── org.example.ecommerceframework
-│               ├── tests
-│               └── testcomponents
-│                      ├── BaseTest.java
-│                      ├── Listeners.java
-│                      └── Retry.java
+├── src/
+│   ├── main/java/
+│   │   ├── org.example.ecommerceframework.abstractcomponents/
+│   │   │   └── AbstractComponent.java
+│   │   │
+│   │   ├── org.example.ecommerceframework.pageobjects/
+│   │   │   ├── LandingPage.java
+│   │   │   ├── ProductCatalogue.java
+│   │   │   ├── ProductCartPage.java
+│   │   │   ├── OrdersPage.java
+│   │   │   ├── CheckOutPage.java
+│   │   │   └── ConfirmationPage.java
+│   │   │
+│   │   └── org.example.ecommerceframework.resources/
+│   │       ├── ExtentReportNG.java
+│   │       └── GlobalData.properties
 │
-├── reports
-├── testsuit
+│   ├── test/java/
+│   │   ├── org.example.ecommerceframework.testcomponents/
+│   │   │   ├── BaseTest.java
+│   │   │   ├── Listeners.java
+│   │   │   └── Retry.java
+│   │   │
+│   │   └── org.example.ecommerceframework.tests/
+│   │       └── SubmitOrderTest.java
+│
+├── testng.xml
+├── regression.xml
 ├── pom.xml
+│
+├── reports/
+│   ├── index.html
+│   ├── submitOrderTest.png
+│   └── loginErrorValidation.png
+│
+├── test-output/
+│
+├── target/
+│
+├── project-evidence/ ⭐ (NEW FOLDER)
+│   ├── jenkins-build-success.png
+│   ├── maven-test-run.png
+│   ├── git-commit-history.png
+│   ├── extent-report-screenshot.png
+│   └── test-execution-video.mp4
+│
 └── README.md
 ```
 
@@ -129,7 +144,7 @@ Maven is used for:
 - Test execution
 - TestNG integration
 - Maven Surefire Plugin
-- Profile-based execution (dev/qa)
+- Profile-based execution 
 - Browser parameterization
 
 ---
