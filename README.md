@@ -114,7 +114,7 @@ ecommerceframework/
 │
 ├── target/
 │
-├── project-evidence/ ⭐ (NEW FOLDER)
+├── project-evidence/ 
 │   ├── jenkins-build-success.png
 │   ├── maven-test-run.png
 │   ├── extent-report-screenshot.png
