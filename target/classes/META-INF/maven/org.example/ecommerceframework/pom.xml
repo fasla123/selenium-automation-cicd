@@ -39,7 +39,7 @@
   </profile>
   
   <profile>
-  <id>OrderCreation</id>
+  <id>ErrorValidation</id>
   <build>
     <pluginManagement>
         <plugins>
@@ -50,7 +50,7 @@
                 <configuration>
                     <suiteXmlFiles>
                         <suiteXmlFile>
-                            testsuit/testng.xml
+                            testsuit/error-validation.xml
                         </suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>

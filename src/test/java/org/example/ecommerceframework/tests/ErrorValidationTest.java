@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 import org.example.ecommerceframework.testcomponents.Retry;
 
 public class ErrorValidationTest extends BaseTest {
-	@Test(retryAnalyzer = Retry.class)
+	@Test(groups = {"ErrorValidation"},retryAnalyzer = Retry.class)
 	public void loginErrorValidation() throws IOException {
 		// TODO Auto-generated method stub
 		//comments are added
@@ -20,7 +20,7 @@ public class ErrorValidationTest extends BaseTest {
 		Assert.assertTrue(landingPage.getErrorMessage().equalsIgnoreCase("incorrect email or password."));
 	}
 
-	@Test
+	@Test(groups = {"ErrorValidation"})
 	public void productErrorValidation() throws InterruptedException {
 		String productName = "ZARA COAT 3";
 		ProductCatalogue productCatalogue = landingPage.loginApplication("mpu.fasla@gmail.com", "Fasla@1998");
